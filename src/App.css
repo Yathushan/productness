@@ -1,9 +1,8 @@
-@tailwind base;
+@import "tailwindcss/preflight";
 
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
-@tailwind components;
 @tailwind utilities;
 
 /* --- Your existing CSS (cleaned up and made compatible) --- */
@@ -221,10 +220,10 @@ button:active {
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+    * {
+        @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
+    body {
+        @apply bg-background text-foreground;
     }
 }
